@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wpapper">
+        <form id="form">
+            <label>Name
+                <input class="name" type="text" minlength="1" required>
+            </label>
+            <label> Author
+                <input class="author" type="text" minlength="3" required>
+            </label>
+            <label> Priority
+                <input class="priority" type="number" min="1" max="5" required>
+            </label>
+            <select class="category" name="category" id="" required>
+                <option value="">Choose category </option>
+                <option value="Horror">Horror</option>
+                <option value="Romance">Romance</option>
+                <option value="Fantasy">Fantasy</option>
+            </select>
+            <button class="submitBtn" type="submit">Add book</button>
+        </form>
+        <ul class="bookList">
+        </ul>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

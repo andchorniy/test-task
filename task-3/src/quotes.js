@@ -23,6 +23,10 @@ class Quotes extends Component {
     return (
       <>
         <button
+          disabled={
+            this.state.prevIndex === null ||
+            this.state.prevIndex === this.state.index
+          }
           onClick={() => {
             this.setState({
               index: this.state.prevIndex,

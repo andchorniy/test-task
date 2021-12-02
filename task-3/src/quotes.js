@@ -4,7 +4,7 @@ class Quotes extends Component {
   state = {
     quotes: [],
     index: 0,
-    prevIndex: 0,
+    prevIndex: null,
   };
   componentDidMount() {
     fetch(
